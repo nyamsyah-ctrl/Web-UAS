@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <h1 class="logo">Porto<span>folio.</span></h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#datadiri">Data Diri</a></li>
+          <li><a href="#projek">Projek</a></li>
+          <li><a href="#dokumentasi">Dokumentasi</a></li>
+          <li><a href="#kontak">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <h2>Halo, Saya <span class="highlight">Nama Anda</span></h2>
+        <p>Web Developer & Audio Enthusiast</p>
+        <a href="#projek" class="btn">Lihat Karya</a>
+      </div>
+    </header>
+
+    <section id="datadiri" class="section">
+      <div class="container">
+        <h2 class="section-title">Data Diri</h2>
+        <div class="about-content">
+          <p>
+            Halo! Saya adalah seorang profesional yang bersemangat dalam dunia
+            teknologi. Saya suka membangun website yang fungsional dan
+            mendokumentasikan karya melalui audio.
+          </p>
+          <ul class="info-list" style="margin-top: 20px">
+            <li><strong>Nama:</strong> Nama Lengkap Anda</li>
+            <li><strong>Domisili:</strong> Kota Anda, Indonesia</li>
+            <li>
+              <strong>Keahlian:</strong> HTML, CSS, JavaScript, Editing Audio
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projek" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Projek Saya</h2>
+        <p style="text-align: center; margin-bottom: 20px; font-size: 0.9rem">
+          Klik gambar untuk memperbesar.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <img
+              src="projek1.jpg"
+              alt="Website E-Commerce"
+              class="card-img"
+              onerror="this.src='https://placehold.co/600x400?text=Upload+Screenshot+1'"
+            />
+            <div class="card-body">
+              <h3>Website E-Commerce</h3>
+              <p>Toko online responsif dengan fitur keranjang belanja.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="projek2.jpg"
+              alt="Aplikasi Kasir"
+              class="card-img"
+              onerror="this.src='https://placehold.co/600x400?text=Upload+Screenshot+2'"
+            />
+            <div class="card-body">
+              <h3>Aplikasi Kasir</h3>
+              <p>Sistem pencatatan transaksi berbasis web sederhana.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="projek3.jpg"
+              alt="Landing Page"
+              class="card-img"
+              onerror="this.src='https://placehold.co/600x400?text=Upload+Screenshot+3'"
+            />
+            <div class="card-body">
+              <h3>Landing Page</h3>
+              <p>Halaman promosi produk yang menarik dan modern.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dokumentasi" class="section">
+      <div class="container">
+        <h2 class="section-title">Dokumentasi Galeri</h2>
+        <p style="text-align: center; margin-bottom: 2rem">
+          Dokumentasi visual dan audio dari berbagai aktivitas dan karya.
+        </p>
+
+        <div class="grid-3">
+          <div class="card doc-card">
+            <img
+              src="doc_img1.jpg"
+              alt="Suara Alam"
+              class="card-img"
+              onerror="this.src='https://placehold.co/600x400?text=Dokumen+1+Image'"
+            />
+            <div class="card-body">
+              <h3>Rekaman Suara Alam</h3>
+              <p>Dokumentasi rekaman suara di pegunungan.</p>
+              <audio controls class="doc-audio-player">
+                <source src="audio_alam.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+          </div>
+
+          <div class="card doc-card">
+            <img
+              src="doc_img2.jpg"
+              alt="Podcast Studio"
+              class="card-img"
+              onerror="this.src='https://placehold.co/600x400?text=Dokumen+2+Image'"
+            />
+            <div class="card-body">
+              <h3>Foto Sesi Rekaman</h3>
+              <p>Foto saat proses mixing audio untuk podcast.</p>
+              <audio controls class="doc-audio-player">
+                <source src="audio_podcast.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+          </div>
+
+          <div class="card doc-card">
+            <img
+              src="placeholder_mic.jpg"
+              alt="Wawancara Eksklusif"
+              class="card-img"
+              onerror="this.src='https://placehold.co/600x400?text=Audio+Wawancara'"
+            />
+            <div class="card-body">
+              <h3>Wawancara Client</h3>
+              <p>Rekaman diskusi awal dengan klien proyek.</p>
+              <audio controls class="doc-audio-player">
+                <source src="audio_wawancara.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section bg-dark">
+      <div class="container">
+        <h2 class="section-title text-white">Hubungi Kami</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Nama Lengkap" required />
+          <input type="email" placeholder="Alamat Email" required />
+          <textarea
+            rows="5"
+            placeholder="Tulis pesan Anda disini..."
+            required
+          ></textarea>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Portofolio Saya. Dibuat dengan HTML, CSS & JS.</p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" />
+      <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
