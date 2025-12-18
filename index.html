@@ -3,160 +3,237 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Saya</title>
+    <title>Portofolio Saya | Web Dev</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <nav class="navbar">
       <div class="container nav-container">
-        <h1 class="logo">Porto<span>folio.</span></h1>
+        <a href="#" class="logo"
+          >Porto<span class="gradient-text">folio.</span></a
+        >
         <div class="menu-toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
         <ul class="nav-links">
-          <li><a href="#datadiri">Data Diri</a></li>
-          <li><a href="#projek">Projek</a></li>
-          <li><a href="#dokumentasi">Dokumentasi</a></li>
-          <li><a href="#kontak">Hubungi Kami</a></li>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#projects">Karya</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact" class="btn-nav">Kontak</a></li>
         </ul>
       </div>
     </nav>
 
-    <header class="hero">
-      <div class="container">
-        <h2>Halo, Saya <span class="highlight">Nama Anda</span></h2>
-        <p>Web Developer & Audio Enthusiast</p>
-        <a href="#projek" class="btn">Lihat Karya</a>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <span class="subtitle">Selamat Datang di Dunia Saya</span>
+        <h1>
+          Halo, Saya
+          <span class="gradient-text type-effect">Hisyam Arief Firmansyah</span>
+        </h1>
+        <p class="role">Mahasiswa Progam Studi Sistem Informasi</p>
+        <p class="description">
+          Menyimpan pengalaman juga projek yang pernah saya buat pada semester 1
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"
+            >Lihat Karya <i class="fas fa-arrow-right"></i
+          ></a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+        </div>
       </div>
-    </header>
+      <div class="glow-circle"></div>
+    </section>
 
-    <section id="datadiri" class="section">
+    <section id="about" class="section reveal">
       <div class="container">
-        <h2 class="section-title">Data Diri</h2>
-        <div class="about-content">
-          <p>
-            Halo! Saya adalah seorang profesional yang bersemangat dalam dunia
-            teknologi. Saya suka membangun website yang fungsional dan
-            mendokumentasikan karya melalui audio.
-          </p>
-          <ul class="info-list" style="margin-top: 20px">
-            <li><strong>Nama:</strong> Nama Lengkap Anda</li>
-            <li><strong>Domisili:</strong> Kota Anda, Indonesia</li>
-            <li>
-              <strong>Keahlian:</strong> HTML, CSS, JavaScript, Editing Audio
-            </li>
-          </ul>
+        <h2 class="section-title">
+          Tentang <span class="gradient-text">Saya</span>
+        </h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Passion in Code & Sound</h3>
+            <p>
+              Saya adalah seorang profesional yang berdedikasi dalam menciptakan
+              solusi web modern. Selain coding, saya memiliki ketertarikan
+              mendalam pada dunia audio engineering.
+            </p>
+            <div class="stats">
+              <div class="stat-item">
+                <h4>20+</h4>
+                <p>Projek Selesai</p>
+              </div>
+              <div class="stat-item">
+                <h4>3+</h4>
+                <p>Tahun Pengalaman</p>
+              </div>
+            </div>
+            <ul class="skills-list">
+              <li><i class="fab fa-html5"></i> HTML5</li>
+              <li><i class="fab fa-css3-alt"></i> CSS3</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+              <li><i class="fas fa-microphone-lines"></i> Audio Mixing</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img
+              src="Gambar .jpg"
+              alt="Profil"
+              onerror="this.src='https://placehold.co/600x600/1e293b/FFF?text=Foto+Anda'"
+            />
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projek" class="section bg-light">
+    <section id="projects" class="section bg-darker reveal">
       <div class="container">
-        <h2 class="section-title">Projek Saya</h2>
-        <p style="text-align: center; margin-bottom: 20px; font-size: 0.9rem">
-          Klik gambar untuk memperbesar.
+        <h2 class="section-title">
+          Karya <span class="gradient-text">Terbaik</span>
+        </h2>
+        <p class="section-desc">
+          Beberapa projek pilihan yang telah saya kerjakan.
         </p>
 
         <div class="grid-3">
-          <div class="card">
-            <img
-              src="projek1.jpg"
-              alt="Website E-Commerce"
-              class="card-img"
-              onerror="this.src='https://placehold.co/600x400?text=Upload+Screenshot+1'"
-            />
+          <div class="card project-card">
+            <div class="card-image-wrapper">
+              <img
+                src="projek1.jpg"
+                alt="E-Commerce"
+                onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=E-Commerce'"
+                class="card-img gallery-trigger"
+              />
+              <div class="overlay">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
             <div class="card-body">
+              <span class="tag">Web Development</span>
               <h3>Website E-Commerce</h3>
-              <p>Toko online responsif dengan fitur keranjang belanja.</p>
+              <p>
+                Platform belanja online modern dengan integrasi payment gateway.
+              </p>
+              <a href="#" class="read-more"
+                >Detail Project <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
 
-          <div class="card">
-            <img
-              src="projek2.jpg"
-              alt="Aplikasi Kasir"
-              class="card-img"
-              onerror="this.src='https://placehold.co/600x400?text=Upload+Screenshot+2'"
-            />
+          <div class="card project-card">
+            <div class="card-image-wrapper">
+              <img
+                src="projek2.jpg"
+                alt="Kasir App"
+                onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=App+Kasir'"
+                class="card-img gallery-trigger"
+              />
+              <div class="overlay">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
             <div class="card-body">
-              <h3>Aplikasi Kasir</h3>
-              <p>Sistem pencatatan transaksi berbasis web sederhana.</p>
+              <span class="tag">Web App</span>
+              <h3>Aplikasi POS Kasir</h3>
+              <p>Sistem manajemen transaksi untuk UMKM berbasis cloud.</p>
+              <a href="#" class="read-more"
+                >Detail Project <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
 
-          <div class="card">
-            <img
-              src="projek3.jpg"
-              alt="Landing Page"
-              class="card-img"
-              onerror="this.src='https://placehold.co/600x400?text=Upload+Screenshot+3'"
-            />
+          <div class="card project-card">
+            <div class="card-image-wrapper">
+              <img
+                src="projek3.jpg"
+                alt="Landing Page"
+                onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=Landing+Page'"
+                class="card-img gallery-trigger"
+              />
+              <div class="overlay">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
             <div class="card-body">
-              <h3>Landing Page</h3>
-              <p>Halaman promosi produk yang menarik dan modern.</p>
+              <span class="tag">UI/UX Design</span>
+              <h3>Company Profile</h3>
+              <p>Landing page responsif dengan animasi interaktif.</p>
+              <a href="#" class="read-more"
+                >Detail Project <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="dokumentasi" class="section">
+    <section id="gallery" class="section reveal">
       <div class="container">
-        <h2 class="section-title">Dokumentasi Galeri</h2>
-        <p style="text-align: center; margin-bottom: 2rem">
-          Dokumentasi visual dan audio dari berbagai aktivitas dan karya.
-        </p>
+        <h2 class="section-title">
+          Dokumentasi & <span class="gradient-text">Audio</span>
+        </h2>
 
         <div class="grid-3">
-          <div class="card doc-card">
-            <img
-              src="doc_img1.jpg"
-              alt="Suara Alam"
-              class="card-img"
-              onerror="this.src='https://placehold.co/600x400?text=Dokumen+1+Image'"
-            />
+          <div class="card audio-card">
+            <div class="audio-visual">
+              <img
+                src="https://placehold.co/600x400/2563eb/FFF?text=Nature"
+                alt="Cover"
+                class="audio-cover gallery-trigger"
+              />
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
             <div class="card-body">
-              <h3>Rekaman Suara Alam</h3>
-              <p>Dokumentasi rekaman suara di pegunungan.</p>
-              <audio controls class="doc-audio-player">
+              <h3>Suara Alam</h3>
+              <p class="date">Recorded: Jan 2024</p>
+              <audio controls>
                 <source src="audio_alam.mp3" type="audio/mpeg" />
               </audio>
             </div>
           </div>
 
-          <div class="card doc-card">
-            <img
-              src="doc_img2.jpg"
-              alt="Podcast Studio"
-              class="card-img"
-              onerror="this.src='https://placehold.co/600x400?text=Dokumen+2+Image'"
-            />
+          <div class="card audio-card">
+            <div class="audio-visual">
+              <img
+                src="https://placehold.co/600x400/7c3aed/FFF?text=Podcast"
+                alt="Cover"
+                class="audio-cover gallery-trigger"
+              />
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
             <div class="card-body">
-              <h3>Foto Sesi Rekaman</h3>
-              <p>Foto saat proses mixing audio untuk podcast.</p>
-              <audio controls class="doc-audio-player">
+              <h3>Podcast Tech Talk</h3>
+              <p class="date">Episode 01</p>
+              <audio controls>
                 <source src="audio_podcast.mp3" type="audio/mpeg" />
               </audio>
             </div>
           </div>
 
-          <div class="card doc-card">
-            <img
-              src="placeholder_mic.jpg"
-              alt="Wawancara Eksklusif"
-              class="card-img"
-              onerror="this.src='https://placehold.co/600x400?text=Audio+Wawancara'"
-            />
+          <div class="card audio-card">
+            <div class="audio-visual">
+              <img
+                src="https://placehold.co/600x400/db2777/FFF?text=Interview"
+                alt="Cover"
+                class="audio-cover gallery-trigger"
+              />
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
             <div class="card-body">
-              <h3>Wawancara Client</h3>
-              <p>Rekaman diskusi awal dengan klien proyek.</p>
-              <audio controls class="doc-audio-player">
+              <h3>Wawancara Klien</h3>
+              <p class="date">Project Briefing</p>
+              <audio controls>
                 <source src="audio_wawancara.mp3" type="audio/mpeg" />
               </audio>
             </div>
@@ -165,24 +242,62 @@
       </div>
     </section>
 
-    <section id="kontak" class="section bg-dark">
-      <div class="container">
-        <h2 class="section-title text-white">Hubungi Kami</h2>
-        <form class="contact-form">
-          <input type="text" placeholder="Nama Lengkap" required />
-          <input type="email" placeholder="Alamat Email" required />
-          <textarea
-            rows="5"
-            placeholder="Tulis pesan Anda disini..."
-            required
-          ></textarea>
-          <button type="submit" class="btn">Kirim Pesan</button>
+    <section id="contact" class="section bg-gradient reveal">
+      <div class="container contact-container">
+        <div class="contact-info">
+          <h2>Mari <br />Bekerja Sama</h2>
+          <p>
+            Punya ide menarik? Jangan ragu untuk menghubungi saya. Mari kita
+            wujudkan ide tersebut menjadi kenyataan.
+          </p>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>email@anda.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Jakarta, Indonesia</span>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <form class="glass-form">
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama anda" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="email@contoh.com" required />
+          </div>
+          <div class="form-group">
+            <label>Pesan</label>
+            <textarea
+              rows="4"
+              placeholder="Apa yang bisa saya bantu?"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Kirim Pesan
+          </button>
         </form>
       </div>
     </section>
 
     <footer>
-      <p>&copy; 2024 Portofolio Saya. Dibuat dengan HTML, CSS & JS.</p>
+      <div class="container">
+        <p>
+          &copy; 2024 Portofolio Saya. <br /><span
+            style="font-size: 0.8rem; opacity: 0.7"
+            >Designed with passion.</span
+          >
+        </p>
+      </div>
     </footer>
 
     <div id="imageModal" class="modal">
